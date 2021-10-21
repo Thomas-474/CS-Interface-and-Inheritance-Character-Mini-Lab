@@ -8,5 +8,8 @@ namespace CS_Interface_and_Inheritance_Character_Mini_Lab
 {
     interface IFighter
     {
+        string Name { get; }
+        string Race { get; }
+        string Weapon { get; }
     }
 }

@@ -6,15 +6,20 @@ using System.Threading.Tasks;
 
 namespace CS_Interface_and_Inheritance_Character_Mini_Lab
 {
-    class Character
+    abstract class Character
     {
-        public string Race
-        { get; protected set; }
-
         public string Name
         { get; protected set; }
 
-        public string[] Inventory
+        public string Race
         { get; protected set; }
+
+        public Character(string name, string race)
+        {
+            Name = name;
+            Race = race;
+        }
+
+        public abstract string Describe();
     }
 }
